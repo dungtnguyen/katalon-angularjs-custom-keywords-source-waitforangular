@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>AutoCompleteDropdownCustom</name>
+   <tag></tag>
+   <elementGuidId>cf58c8ca-4eaa-49c7-8ef5-a31fed58de66</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//md-autocomplete[@id=&quot;custom-template&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//md-autocomplete[@id=&quot;custom-template&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

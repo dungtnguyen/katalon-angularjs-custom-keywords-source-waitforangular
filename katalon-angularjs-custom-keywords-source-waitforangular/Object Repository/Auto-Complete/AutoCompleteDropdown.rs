@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>AutoCompleteDropdown</name>
+   <tag></tag>
+   <elementGuidId>c3187669-c677-415a-944e-ca521e2781a2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//md-autocomplete[@input-aria-describedby=&quot;autocompleteDetailedDescription&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//md-autocomplete[@input-aria-describedby=&quot;autocompleteDetailedDescription&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>
