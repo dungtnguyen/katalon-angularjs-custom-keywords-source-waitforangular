@@ -27,3 +27,9 @@ katalon {
   dependencyPrefix = "com.katalon"
   minimize = false
 }
+
+dependencies {
+  compile('com.paulhammant:ngwebdriver:1.1.4') {
+    exclude group: 'org.seleniumhq.selenium'
+  }
+}
