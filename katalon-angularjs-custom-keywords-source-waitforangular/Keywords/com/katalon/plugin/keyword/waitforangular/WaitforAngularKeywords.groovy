@@ -34,7 +34,7 @@ public class WaitForAngularKeywords {
 			ngdriver.waitForAngularRequestsToFinish()
 
 		} catch (WebElementNotFoundException e) {
-			KeywordUtil.markFailed("Can't wait for Angular elements orrequests to finish: " + e.message)
+			KeywordUtil.markFailed("Can't wait for Angular elements or requests to finish: " + e.message)
 		}
 	}
 }
