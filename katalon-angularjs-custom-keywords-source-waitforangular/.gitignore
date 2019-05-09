@@ -2,14 +2,20 @@
 
 bin
 
-Drivers/*.jar
+Drivers
 
 Reports
 
 Libs
 
+/build
+
 .classpath
 
 .project
 
-.DS_Store
+.settings
+
+gradlew
+
+gradlew.bat
