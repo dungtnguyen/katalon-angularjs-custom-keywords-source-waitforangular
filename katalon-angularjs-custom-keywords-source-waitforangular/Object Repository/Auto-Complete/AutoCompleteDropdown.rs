@@ -6,12 +6,12 @@
    <elementGuidId>c3187669-c677-415a-944e-ca521e2781a2</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//md-autocomplete[@input-aria-describedby=&quot;autocompleteDetailedDescription&quot;]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//md-autocomplete[@input-aria-describedby=&quot;autocompleteDetailedDescription&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>

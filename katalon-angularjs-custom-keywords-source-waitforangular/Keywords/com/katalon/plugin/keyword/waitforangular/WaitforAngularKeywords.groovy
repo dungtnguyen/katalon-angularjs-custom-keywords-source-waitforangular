@@ -1,22 +1,37 @@
 package com.katalon.plugin.keyword.waitforangular
+import org.openqa.selenium.By
 import org.openqa.selenium.JavascriptExecutor
 import org.openqa.selenium.WebDriver
-import com.paulhammant.ngwebdriver.ByAngular
-import com.paulhammant.ngwebdriver.NgWebDriver
-
+import org.openqa.selenium.WebElement
 
 import com.kms.katalon.core.annotation.Keyword
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-
-
-import internal.GlobalVariable
+import com.paulhammant.ngwebdriver.NgWebDriver
 
 public class WaitForAngularKeywords {
+
+	/**
+	 * Initialize NgWebDriver
+	 *
+	 */
+	@Keyword
+	public NgWebDriver initNgDriver() {
+		WebDriver driver = DriverFactory.getWebDriver()
+		return new NgWebDriver((JavascriptExecutor) driver)
+	}
+
+	/**
+	 * Find Web element using By class
+	 * @param by Locator created by By class
+	 * @return a web element
+	 */
+	@Keyword
+	public WebElement findWebElementBy(By by) {
+		WebDriver driver = DriverFactory.getWebDriver()
+		return driver.findElement(by)
+	}
 
 	/**
 	 * Wait for the elements or requests in Angular application 
@@ -28,11 +43,10 @@ public class WaitForAngularKeywords {
 		try {
 			//Get Web driver
 			WebDriver driver = DriverFactory.getWebDriver()
-
+			
 			//Creating an instance of NgWebDriver
 			NgWebDriver ngdriver = new NgWebDriver((JavascriptExecutor) driver)
 			ngdriver.waitForAngularRequestsToFinish()
-
 		} catch (WebElementNotFoundException e) {
 			KeywordUtil.markFailed("Can't wait for Angular elements or requests to finish: " + e.message)
 		}
